@@ -14,10 +14,10 @@ public class MedicalRecordService implements IMedicalRecordService {
     }
 
     private IMedicalRecordRepository productRepository = new MedicalRecordRepository();
-    @Override
-    public List<MedicalRecord> findAll() {
-        return productRepository.findAll();
-    }
+//    @Override
+//    public List<MedicalRecord> findAll() {
+//        return productRepository.findAll();
+//    }
 
     @Override
     public List<MedicalRecordDto> search(String name, String manufactor) {
@@ -29,10 +29,7 @@ public class MedicalRecordService implements IMedicalRecordService {
         return productRepository.findById(id);
     }
 
-    @Override
-    public MedicalRecord findByName(String name) {
-        return productRepository.findByName(name);
-    }
+
 
     @Override
     public boolean add(MedicalRecord newMedicalRecord) {

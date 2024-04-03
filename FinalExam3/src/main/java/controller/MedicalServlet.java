@@ -104,7 +104,6 @@ public class MedicalServlet extends HttpServlet {
     private void search(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String searchRecordId = req.getParameter("searchRecordId");
         String searchPatientName = req.getParameter("searchPatientName");
-        System.out.println(searchRecordId + searchPatientName);
         List<MedicalRecordDto> recordDtos = medicalRecordService.search(searchRecordId,searchPatientName);
         req.setAttribute("recordDtos", recordDtos);
         List<Patient> patients = patientService.getAll();

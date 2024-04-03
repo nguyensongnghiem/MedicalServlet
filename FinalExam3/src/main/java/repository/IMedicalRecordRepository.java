@@ -6,12 +6,12 @@ import model.MedicalRecord;
 import java.util.List;
 
 public interface IMedicalRecordRepository {
-    public List<MedicalRecord> findAll();
+//    public List<MedicalRecord> findAll();
     public List<MedicalRecordDto> findAllDto();
 
     public MedicalRecord findById(int id);
 
-    public MedicalRecord findByName(String name);
+//    public MedicalRecord findByName(String name);
 
     public boolean add(MedicalRecord newMedicalRecord);
 

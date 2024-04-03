@@ -25,9 +25,12 @@
     <c:if test="${param.mess=='NOK'}">
         <h2>Thất bại !</h2>
     </c:if>
+
+    <%--    THÊM MỚI--%>
     <a href="/medicalRecord?action=add" class="btn btn-primary mb-3">Thêm mới</a>
     <br>
 
+    <%--    TÌM KIẾM--%>
     <form action="/medicalRecord?action=search" method="post">
         <div class="d-flex flex-wrap">
             <div style="margin-bottom: 5px">
@@ -35,7 +38,7 @@
             </div>
             <div class="input-group" style="margin-bottom: 5px">
                 <span class="input-group-text mb-3">Tìm mã bệnh án</span>
-                <input type="text" class="form-control mb-3 "  name="searchRecordId"
+                <input type="text" class="form-control mb-3 " name="searchRecordId"
                        placeholder="nhập Mã Bệnh án...">
             </div>
             <div class="mb-3 d-flex flex-nowrap " style="margin-bottom: 5px">
@@ -54,7 +57,7 @@
     <table class="table ">
         <tr>
             <th>STT</th>
-            <th> Mã Bệnh án </th>
+            <th> Mã Bệnh án</th>
             <th>Ngày vào viện</th>
             <th>Ngày ra viện</th>
             <th>Mô tả bệnh</th>
@@ -101,7 +104,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Bạn có muốn xóa bệnh án  <span id="delete-name"></span> có Id là <span id="delete-id"></span> ?
+                    Bạn có muốn xóa bệnh án <span id="delete-name"></span> có Id là <span id="delete-id"></span> ?
                 </div>
                 <input type="hidden" id="hidden-input-id" name="deleteId">
                 <div class="modal-footer">

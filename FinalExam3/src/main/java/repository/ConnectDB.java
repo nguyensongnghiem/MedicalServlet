@@ -8,7 +8,7 @@ import java.util.concurrent.Executor;
 public class ConnectDB {
     private final static String URL = "jdbc:mysql://localhost:3306/medical";
     private final static String USER = "root";
-    private final static String PASS = "";
+    private final static String PASS = "root";
     public static Connection getConnectDB() throws SQLException {
         Connection connection = null;
         try {
